@@ -55,13 +55,14 @@ public class TransferService {
 //        return this.transferDAO.save(transfer);
 //    }
 
-    public Optional<Transfer> findById(long id) {
+    public Optional<Transfer> findById(String id) {
         return this.transferDAO.findById(id);
     }
 
     // needs some clean-up
     public Transfer create(CreateTransferDto ctDto) {
         Transfer transfer = new Transfer();
+        transfer.setTransferId(ctDto.id);
 
         if (ctDto.sender.type.equals(CreateTransferDto.TransferClientType.CLIENT)) {
 

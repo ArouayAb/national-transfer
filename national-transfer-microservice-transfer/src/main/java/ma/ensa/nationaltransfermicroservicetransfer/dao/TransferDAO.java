@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Date;
 
 @Repository
-public interface TransferDAO extends JpaRepository<Transfer, Long> {
+public interface TransferDAO extends JpaRepository<Transfer, String> {
 
     @Query("SELECT SUM(t.amount) FROM Transfer t WHERE t.senderClient = :sender AND t.transfer_date >= :starting")
     Double getTranferSumBySenderAndStartingDate(Client sender, Date starting);

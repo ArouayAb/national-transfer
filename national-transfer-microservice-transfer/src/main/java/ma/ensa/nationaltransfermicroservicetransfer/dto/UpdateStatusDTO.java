@@ -5,19 +5,19 @@ import ma.ensa.nationaltransfermicroservicetransfer.enums.TransferStatus;
 import java.io.Serializable;
 
 public class UpdateStatusDTO implements Serializable {
-    private Long id;
+    private String id;
     private TransferStatus transferStatus;
 
-    public UpdateStatusDTO(Long id, TransferStatus transferStatus) {
+    public UpdateStatusDTO(String id, TransferStatus transferStatus) {
         this.id = id;
         this.transferStatus = transferStatus;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -5,6 +5,7 @@ import ma.ensa.nationaltransfermicroservicetransfer.enums.TransferStatus;
 import ma.ensa.nationaltransfermicroservicetransfer.enums.TransferType;
 
 public class CreateTransferDto {
+    public String id;
     public TransferType transferType;
     public Double amount;
     public TransferStatus status;

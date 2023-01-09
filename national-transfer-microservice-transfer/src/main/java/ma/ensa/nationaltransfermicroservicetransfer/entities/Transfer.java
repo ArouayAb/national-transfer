@@ -8,8 +8,7 @@ import java.util.Date;
 @Entity
 public class Transfer {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long transferId;
+    private String transferId;
 
     private double amount;
 
@@ -41,11 +40,11 @@ public class Transfer {
     public Transfer() {
     }
 
-    public long getTransferId() {
+    public String getTransferId() {
         return transferId;
     }
 
-    public void setTransferId(long transferId) {
+    public void setTransferId(String transferId) {
         this.transferId = transferId;
     }
 

@@ -38,7 +38,7 @@ public class TransferController {
     }
 
     @GetMapping("/find/{id}")
-    public Transfer findById(@PathVariable long id) {
+    public Transfer findById(@PathVariable String id) {
         Optional<Transfer> transfer = this.transferService.findById(id);
         return transfer.orElse(null);
     }
