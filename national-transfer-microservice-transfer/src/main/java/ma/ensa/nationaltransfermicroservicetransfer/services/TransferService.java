@@ -167,7 +167,7 @@ public class TransferService {
             throw new RuntimeException("Transfer cap surpassed");
         }
 
-        if (sender.getWallet().getBalance() < ctDto.amount) {
+        if (ctDto.transferType.equals(TransferType.DEBIT) && sender.getWallet().getBalance() < ctDto.amount) {
             throw new RuntimeException("Net enough balance");
         }
 
