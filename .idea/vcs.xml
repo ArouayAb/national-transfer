@@ -2,5 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/national-transfer-microservice-eureka" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/national-transfer-microservice-gateway" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/national-transfer-microservice-notification" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/national-transfer-microservice-sirone" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/national-transfer-microservice-transfer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/national-transfer-microservice-wallet" vcs="Git" />
   </component>
 </project>
