@@ -7,20 +7,20 @@ import java.util.List;
 @Entity
 public class Client {
     @Id
-    private long clientId;
+    private String clientId;
 
     public Client() {
     }
 
-    public Client(long clientId) {
+    public Client(String clientId) {
         this.clientId = clientId;
     }
 
-    public long getClientId() {
+    public String getClientId() {
         return clientId;
     }
 
-    public void setClientId(long clientId) {
+    public void setClientId(String clientId) {
         this.clientId = clientId;
     }
 }

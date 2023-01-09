@@ -14,7 +14,7 @@ public class CreateTransferDto {
 
     public class TransferClient {
         public TransferClientType type;
-        public Long id;
+        public String id;
     }
     public enum TransferClientType {
         CLIENT,

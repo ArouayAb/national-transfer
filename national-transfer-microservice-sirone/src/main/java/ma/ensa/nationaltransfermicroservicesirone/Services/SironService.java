@@ -18,7 +18,7 @@ public class SironService {
     }
 
 
-    public boolean checkBlacklist(Long id) {
+    public boolean checkBlacklist(String id) {
         Optional<BlacklistedClient> blacklistedClient = blacklistedClientDAO.findById(id);
         return blacklistedClient.isPresent();
     }

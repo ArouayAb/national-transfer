@@ -61,7 +61,7 @@
       "mysql"
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -178,7 +178,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml.keycloak: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="keycloak" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.keycloak: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.mysql: Compose Deployment" />
       <item itemvalue="Spring Boot.NationalTransferMicroserviceGatewayApplication" />
       <item itemvalue="Spring Boot.NationalTransferMicroserviceEurekaApplication" />
       <item itemvalue="Spring Boot.NationalTransferMicroserviceNotificationApplication" />
@@ -186,6 +214,13 @@
       <item itemvalue="Spring Boot.NationalTransferMicroserviceTransferApplication" />
       <item itemvalue="Spring Boot.NationalTransferMicroserviceWalletApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.keycloak: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.mysql: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.mysql: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -228,5 +263,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/national-transfer-microservice-eureka" />
+      <path value="$PROJECT_DIR$/national-transfer-microservice-gateway" />
+      <path value="$PROJECT_DIR$/national-transfer-microservice-notification" />
+      <path value="$PROJECT_DIR$/national-transfer-microservice-sirone" />
+      <path value="$PROJECT_DIR$/national-transfer-microservice-transfer" />
+      <path value="$PROJECT_DIR$/national-transfer-microservice-wallet" />
+    </ignored-roots>
   </component>
 </project>

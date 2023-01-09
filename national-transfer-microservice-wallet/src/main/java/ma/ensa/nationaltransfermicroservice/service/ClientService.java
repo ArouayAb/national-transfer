@@ -55,7 +55,7 @@ public class ClientService {
         return this.clientRepository.save(client);
     }
 
-    public Optional<Client> findClientById(Long id) {
+    public Optional<Client> findClientById(String id) {
         return this.clientRepository.findById(id);
     }
 

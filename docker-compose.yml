@@ -151,6 +151,7 @@ services:
       - 3306
 
 volumes:
+  mysql_data:
   national-transfer-microservice-transfer-volume:
   national-transfer-microservice-wallet-volume:
   national-transfer-microservice-sirone-volume:

@@ -6,20 +6,20 @@ import javax.persistence.Id;
 @Entity
 public class Prospect {
     @Id
-    private Long id;
+    private String id;
 
     public Prospect() {
     }
 
-    public Prospect(Long id) {
+    public Prospect(String id) {
         this.id = id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 }

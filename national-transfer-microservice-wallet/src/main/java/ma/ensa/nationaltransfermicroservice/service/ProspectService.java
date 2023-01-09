@@ -21,7 +21,7 @@ public class ProspectService {
         return this.prospectRepository.save(prospect);
     }
 
-    public Optional<Prospect> findProspectById(Long id) {
+    public Optional<Prospect> findProspectById(String id) {
         return this.prospectRepository.findById(id);
     }
 }
