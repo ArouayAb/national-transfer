@@ -29,7 +29,7 @@ public class ClientController {
     }
 
     @GetMapping("/find/{id}")
-    public ResponseEntity<Client> findClientById(@PathVariable Long id) {
+    public ResponseEntity<Client> findClientById(@PathVariable String id) {
         Optional<Client> client =  this.clientService.findClientById(id);
         return client.map(value -> new ResponseEntity<>(value, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(null, HttpStatus.NOT_FOUND));

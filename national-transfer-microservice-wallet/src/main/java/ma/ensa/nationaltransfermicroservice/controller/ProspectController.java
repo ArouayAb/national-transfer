@@ -27,7 +27,7 @@ public class ProspectController {
     }
 
     @GetMapping("/find/{id}")
-    public ResponseEntity<Prospect> findProspectById(@PathVariable Long id) {
+    public ResponseEntity<Prospect> findProspectById(@PathVariable String id) {
         Optional<Prospect> prospect =  this.prospectService.findProspectById(id);
         return prospect.map(value -> new ResponseEntity<>(value, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(null, HttpStatus.NOT_FOUND));

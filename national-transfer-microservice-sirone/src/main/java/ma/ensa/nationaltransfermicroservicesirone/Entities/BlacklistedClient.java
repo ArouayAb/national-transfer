@@ -9,7 +9,7 @@ import java.util.Date;
 public class BlacklistedClient {
 
     @Id
-    private Long bclientId;
+    private String bclientId;
     @NonNull
     private Date blacklistingDate;
     @NonNull
@@ -22,18 +22,18 @@ public class BlacklistedClient {
     public BlacklistedClient() {
     }
 
-    public BlacklistedClient(Long bclientId, Date blacklistingDate, String cause, Supervisor supervisor) {
+    public BlacklistedClient(String bclientId, Date blacklistingDate, String cause, Supervisor supervisor) {
         this.bclientId = bclientId;
         this.blacklistingDate = blacklistingDate;
         this.cause = cause;
         this.supervisor = supervisor;
     }
 
-    public void setBclientId(Long bclient_id) {
+    public void setBclientId(String bclient_id) {
         this.bclientId = bclient_id;
     }
 
-    public Long getBclientId() {
+    public String getBclientId() {
         return bclientId;
     }
 
