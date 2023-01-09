@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @Transactional
-public interface BlacklistedClientDAO extends JpaRepository<BlacklistedClient, Long> {
+public interface BlacklistedClientDAO extends JpaRepository<BlacklistedClient, String> {
 }

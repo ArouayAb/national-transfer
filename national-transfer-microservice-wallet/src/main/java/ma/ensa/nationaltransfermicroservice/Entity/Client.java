@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Client {
     @Id
-    private Long id;
+    private String id;
 
     @OneToOne(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")

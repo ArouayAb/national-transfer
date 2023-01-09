@@ -21,7 +21,7 @@ public class SironController {
     }
 
     @GetMapping("is-blacklisted/{id}")
-    public boolean isBlacklisted(@PathVariable Long id) {
+    public boolean isBlacklisted(@PathVariable String id) {
 
         return this.sironService.checkBlacklist(id);
     }

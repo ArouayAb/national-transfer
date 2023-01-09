@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Prospect {
     @Id
-    private Long id;
+    private String id;
     private String firstName;
     private String LastName;
     private String phoneNumber;

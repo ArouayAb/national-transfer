@@ -1,7 +1,7 @@
 package ma.ensa.nationaltransfermicroservicetransfer.models;
 
 public class ProspectModel {
-    private Long id;
+    private String id;
     private String firstName;
     private String LastName;
     private String phoneNumber;
@@ -9,11 +9,11 @@ public class ProspectModel {
     public ProspectModel() {
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
